@@ -1,2 +1,3 @@
-FROM tomcat
-COPY java-tomcat-maven-example.war /usr/local/tomcat/webapps
+FROM tomcat:latest
+# Dummy text to test 
+COPY target/java-tomcat-maven-example*.war /usr/local/tomcat/webapps/java-tomcat-maven-example.war
