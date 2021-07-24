@@ -1,0 +1,7 @@
+---
+ - hosts: all
+   remote_user: ansadmin
+   become: yes
+   tasks:
+    - name: container start 
+      shell: docker run -itd --name demo -p 8070:8080 sathya310/myimage_1234:latest
